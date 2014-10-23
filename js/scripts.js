@@ -82,5 +82,20 @@ jQuery(document).ready(function(){
 	}
 	secondMap();
 
+	$('#group-of-three').accordion();
+
+	var $datePicker = $('#date-picker');
+
+	$('#trigger-picker').click(function(e){
+		e.preventDefault();
+
+		$datePicker.datepicker();
+	});
+
+	var testButton = $('#test-button');
+	console.log(testButton.attr('name'));
+
+	
+
 
 });

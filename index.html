@@ -5,6 +5,7 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-custom/jquery-ui.theme.min.css">
 	<link rel="stylesheet" type="text/css" href="css/steps.css">
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/styles.css">
@@ -166,15 +167,58 @@
 		<div class="map-box">
 		<div id="map-canvas-two"></div></div>
 
+		<div class="row">
+			<div class="col-md-6">
+				<div id="group-of-three">
+					<h1>First</h1>
+					<div>
+						<p>Content for 1</p>
+						<p><a href="#step2" id="acc-skip2">Next</a></p>
+					</div>
+
+					<h1>Second</h1>
+					<div>
+						<p>Content for 2</p>
+						<p><a href="#step3" id="acc-skip3">Next</a></p>
+					</div>
+
+					<h1>Third</h1>
+					<div>
+						<p>Content for 3</p>
+						
+					</div>
+				</div>
+			</div>
+		
+
+			<div class="col-md-6">
+				<div class="dates">
+					<p>Native picker:</p>
+					<p><input type="date" id="date-picker-native" /></p>
+
+					<p>Date:</p>
+					<input type="text" id="date-picker">
+				</div>
+
+				<button class="btn btn-primary" id="trigger-picker">Go</button>
+
+			</div>
+		</div>
+
+		<button href="test.html" id="test-button" name="my-t">TEST</button>
+
 
 	</div> <!-- end container -->
 
 	<!-- Jquery -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/jquery.steps.min.js"></script>
+	<script src="jquery-ui-custom/jquery-ui.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<!-- Plugins -->
 	<script src="js/scripts.js"></script>
+
+	
 </body>
 </html>

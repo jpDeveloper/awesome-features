@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apis</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-custom/jquery-ui.theme.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1>YouTube API</h1>
+
+		<div class="row">
+
+			<div class="col-md-6" id="videos"></div>
+
+			<div class="col-md-6" id="videoplayer"><div id="myplayer"></div></div>
+
+		</div>
+	
+
+
+	</div> <!-- end container -->
+
+
+	<!-- Jquery -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="jquery-ui-custom/jquery-ui.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Plugins -->
+	<script src="js/apis.js"></script>
+	<script src="http://gdata.youtube.com/feeds/users/parlangemusic/uploads?alt=json&max-results=10&callback=listVideos"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>APIs</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-custom/jquery-ui.theme.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+	<div class="container" id="response">
+
+		<h1>More APIs</h1>
+
+		<div id="buttons" class="form-group">
+      		<label> <input id="query" value='' type="text" class="form-control"/><button id="search-button" onclick="search()" class="btn btn-primary">Search</button></label>
+    	</div>
+
+    	<div id="search-container" style="display:none;"></div>
+
+    	<div id="video-titles"></div>
+
+
+	</div> <!-- end container -->
+
+
+	<!-- Jquery -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="jquery-ui-custom/jquery-ui.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<!-- Plugins -->
+	<script src="js/more.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+
+</body>
+</html>
