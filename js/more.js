@@ -26,7 +26,8 @@ function search() {
     var q = $('#query').val();
     var request = gapi.client.youtube.search.list({
         part: 'snippet', 
-        q: q
+        q: q,
+        maxResults: 10
     });
     
     // Send the request to the API server,
