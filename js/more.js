@@ -63,3 +63,18 @@ function showResponse(response){
 function onSearchResponse(response) {
     showResponse(response);
 }
+
+
+// SVG Animations
+(function(){
+	var animatingSvg = Snap('#fanfair-svg'),
+		blackCircle = animatingSvg.select('#black-circle');
+
+		console.log(blackCircle);
+
+	blackCircle.animate({height: '30'}, 500, mina.easeinout);
+
+
+})();
+
+

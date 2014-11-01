@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>amMap example</title>
+
+        <link rel="stylesheet" href="ammap/ammap.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+
+        <script src="ammap/ammap.js" type="text/javascript"></script>
+        <!-- check ammap/maps/js/ folder to see all available countries -->
+        <!-- map file should be included after ammap.js -->
+		<script src="ammap/maps/js/canadaLow.js" type="text/javascript"></script>
+		<script src="ammap/maps/js/worldLow.js" type="text/javascript"></script>
+		<script src="js/maps.js" type="text/javascript"></script>
+        <script type="text/javascript">
+
+			var map;
+
+
+			AmCharts.ready(function() {
+			    map = new AmCharts.AmMap();
+			    map.pathToImages = "ammap/images/";
+			    map.backgroundColor = "#90cbdd";
+			    map.backgroundAlpha = 0.5;
+			    map.zoomControl.buttonFillAlpha = 0.5;
+			    map.zoomControl.buttonFillColor = "#cecccd";
+			    map.zoomControl.buttonIconColor = "#fafafa";
+			    map.zoomControl.buttonRollOverColor = "#9a9a9a";
+			    map.zoomControl.gridColor = "#fafafa";
+			    map.zoomControl.buttonColorHover = "#d439ae";
+			    map.zoomControl.gridBackgroundAlpha = 0.2;
+			    map.zoomControl.gridBackgroundColor = "#ffffff";
+			    map.zoomControl.buttonBorderAlpha = 0.2;
+			    map.balloon.color = "#333333";
+			    map.zoomControl.homeIconFile = "ff-map-pin.png";
+
+			    var mapPin = "ammap/images/ff-map-pin.png"
+
+			    var dataProvider = {
+			        mapVar: AmCharts.maps.canadaLow,
+			        getAreasFromMap:true,
+			        areas:[{id:"CA-BC", description: "Home"}],
+			        images:[{latitude:49.25, longitude:-123.133333, imageURL: mapPin, title:"Vancouver", description:"Vancouver is Awesome!"}] 
+			    };
+
+			    map.dataProvider = dataProvider;
+
+			    map.areasSettings = {
+			    	color: "#c5e09d",
+			    	outlineThickness: 1,
+			    	rollOverColor: "#f2b792",
+			    	rollOverOutlineColor: "#ffffff",
+			        autoZoom: true,
+			        selectedColor: "#f2b792"
+			    };
+
+			    map.addListener('click', function (event) {
+			    	console.log(map.getDevInfo());	
+			         
+			    });
+
+			    map.addTitle("Green Map", "33px", "#ffffff", 1, true);
+
+
+
+			    map.smallMap = new AmCharts.SmallMap();
+
+			    map.write("mapdiv");
+
+			});
+
+        </script>
+    </head>
+
+    <body>
+        <div id="mapdiv" style="width: 800px; height: 500px;"></div>
+
+        <div id="chartdiv"></div>	
+        
+
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        	function delay(){
+        		setTimeout(function(){
+        			var creditsLink = $('a').attr('href', 'http://www.ammap.com/javascript-maps/');
+				    creditsLink.delay(1000).css('display', 'none');
+				    
+        		}, 11);
+        	}
+
+        	delay();
+        	
+		    
+		});
+        </script>
+
+    </body>
+
+</html>
