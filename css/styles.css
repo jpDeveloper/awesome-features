@@ -1,5 +1,6 @@
 body{
   background-color: #fff;
+
 }
 
 html { height: 100% }
@@ -460,9 +461,21 @@ Main elements - Buildings
 /*My SVG Animation*/
 
 .svg-container{
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   margin: 0 auto 100px;
+}
+
+.gray-color{
+  background-color: #e5e5e5;
+}
+
+/*Icons Box*/
+
+.icons-box{
+  width: 100%;
+  height: 30px;
+  background-color: #999;
 }
 
 

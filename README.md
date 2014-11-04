@@ -1,4 +1,4 @@
 awesome-features
 ================
 
-Cool animations, effects and more awesomeness
+Cool animations, effects and more
