@@ -1,0 +1,475 @@
+/*
+Theme Name:     Maestro Child
+Theme URI:          http://themes.crumina.net/maestro/
+Description:        Fully-functional Business Instrument
+Version:            1
+Author:             Crumina
+Author URI:         http://crumina.net/
+Tags:               light, white, one-column, two-columns, three-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+
+Template:       maestro
+
+License:            GPL v2
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+@font-face {
+    font-family: 'haettenschweilerregular';
+    src: url('fonts/royal_rumble_haettenschweiler-webfont.eot');
+    src: url('fonts/royal_rumble_haettenschweiler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/royal_rumble_haettenschweiler-webfont.woff2') format('woff2'),
+         url('fonts/royal_rumble_haettenschweiler-webfont.woff') format('woff'),
+         url('fonts/royal_rumble_haettenschweiler-webfont.ttf') format('truetype'),
+         url('fonts/royal_rumble_haettenschweiler-webfont.svg#haettenschweilerregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, p {
+	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'haettenschweilerregular', Helvetica, Sans-serif;
+}
+
+h2{
+	font-size: 2.7em;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+.oyster-h1{
+	text-align: center;
+	margin: 0;
+	font-size: 4em;
+	color: #fff;
+	background-color: #5192bc;
+	padding: 2% 0;
+	border-radius: 4px;
+}
+
+.oyster-subs{
+	font-style: italic;
+}
+
+.training-ops{
+	background-color: #6daa64;
+	border-radius: 4px;
+}
+
+#pg-1981-0{
+	margin-bottom: 0 !important;
+}
+
+.single #page-title{
+	display: block;
+}
+
+.fifthy-jp{
+	width: 50% !important;
+}
+
+#pgc-1981-8-1{
+	text-align: center;
+}
+
+#pgc-1981-8-1 .widget_crum-text-widget .widget-title, .crum-text-widget .widget-title{
+	background: none;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+#pgc-1981-8-1 .widget>.title h3{
+	background: none;
+	padding-left: 0;
+}
+
+#pgc-1981-8-1 .widget > .subtitle{
+	left: 0;
+	position: relative;
+	top: 9px;
+}
+
+#panel-1981-14-1-0 h3, #panel-1981-14-1-0 h4{
+	text-align: left;
+	padding-left: 0;
+}
+
+#panel-1981-14-1-0 h4{
+	font-weight: 400;
+}
+
+#widgetizedstickybar-right-content{
+	background-image: none !important;
+}
+
+.widgetizedstickybar-area{
+	padding: 5px 5px 0 !important;
+}
+
+#widgetizedstickybar-right-tab, #widgetizedstickybar-right-content{
+	top: 140px !important;
+}
+
+#wpcf7-f2104-o1 textarea{
+	min-height: 1px !important;
+}
+
+.widgetizedstickybar_font_light div.widgetizedstickybar_widget {
+	color: #fff !important;
+}
+
+.widgetizedstickybar_font_light h3.widgetizedstickybar_widgettitle {
+	color: #fff !important;
+}
+
+.send-button-jp{
+	border-radius: 0;
+	border: none;
+	background-color: #5192bc;
+	color: #fff;
+}
+
+.world{
+	font-weight: bold;
+}
+
+.styled-list li{
+	background: url("http://shucktheworld.com/wp-content/uploads/2014/11/icon-hook.png") 0 3px no-repeat;
+}
+
+.make-friends{
+	text-align: center;
+}
+
+
+.widget-title, .widget>.title h3{
+	font-size: 2em;
+	padding-top: 3px;
+}
+
+.widget > .subtitle{
+	font-size: 1.2em;
+	left: 55px;
+}
+
+#pgc-1981-8-1{
+	text-align: left;
+}
+
+
+#pg-1981-4{
+	margin-bottom: 5% !important;
+}
+
+#panel-1981-11-1-0{
+	text-align: justify;
+	margin-bottom: 10% !important;	
+}
+
+#pg-1981-12, #panel-1981-1-0-1{
+	text-align: center;
+}
+
+#pgc-1981-13-0{
+	text-align: center !important;
+}
+
+#panel-1981-14-0-0 img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	width: 100%;
+}
+
+#pgc-1981-14-1{
+	margin-top: 122px !important;
+}
+
+#panel-1981-15-1-1 .cta-button, #panel-1981-15-1-0 .cta-button{
+	display: block !important;
+}
+
+.contact-img-jp, #panel-1981-16-0-0{
+	text-align: center;
+}
+
+#pgc-2070-0-0{
+	margin-top: 50px;
+}
+
+#pgc-2070-0-0 .to-action-block .al-left{
+	border-left-color: #6daa64 !important;
+}
+
+#widgetizedstickybar-right-tab{
+	background: transparent url('http://shucktheworld.com/wp-content/uploads/2014/11/icon-flag-sticky.png') 4px 15px no-repeat;
+	width: 35px;
+	background-position-y: 7px;
+	background-position-x: 5px;
+
+}
+
+#panel-1981-2-1-0 .textwidget, #panel-1981-2-1-1 .textwidget{
+	font-size: 1.6em;
+	text-align: justify;
+}
+
+
+#panel-1981-2-1-0 .textwidget{
+	padding: 5%;
+	background: #fafafa;
+	border: 1px solid #f1f1f1;
+}
+
+#panel-1981-2-1-1 .textwidget{
+	width: 56%;
+	margin: 0 auto;
+}
+
+.ready{
+	text-align: center;
+	font-size: 3em;
+	margin: 2% 0;
+
+}
+
+.boxed_lay{
+	box-shadow: none;
+}
+
+#panel-1981-3-0-0 .textwidget{
+	text-align: center;
+}
+
+#panel-1981-5-1-0{
+	width: 66%;
+	margin: 0 auto;
+}
+
+#pg-1981-2{
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+.button.large{
+	font-size: 25px;
+}
+
+.shuck-it-img, .icon-wheel{
+	margin-left: 5px;
+}
+
+.text{
+	font-size: 1.4em;
+}
+
+.reveal-modal{
+	width: 560px;
+}
+
+.widget-title, .widget>.title h3{
+	border-bottom: 1px solid #f1f1f1 !important;
+	text-align: left;
+}
+
+#panel-1981-6-0-1 p{
+	font-size: 2.3em;
+	color: #fff;
+	text-shadow: 4px 4px 1px rgba(0,0,0,0.2);
+	margin-bottom: 0;
+}
+
+#panel-1981-6-0-1 .textwidget h2{
+	color: #fff;
+	font-size: 4em !important;
+	margin-bottom: 0;
+}
+
+#pg-1981-2, #pg-1981-3, #pg-1981-5, #pg-1981-6, #pg-1981-8, #pg-1981-9, #pg-1981-10, #pg-1981-11, #pg-1981-12, #pg-1981-13, #pg-1981-15{
+	padding-bottom: 0;
+}
+
+#pg-1981-9{
+	margin-bottom: 0 !important;
+}
+
+.quote p{
+	font-size: 1.2em;
+	color: #999;
+}
+
+.home article .dopinfo{
+	display: none;
+}
+
+#panel-1981-6-0-0, #panel-1981-6-0-1{
+	text-align: center;
+}
+
+#panel-1981-6-0-0{
+	margin-bottom: 0;
+}
+
+#pg-1981-6{
+	background-image: url('http://shucktheworld.com/wp-content/uploads/2014/11/bird-and-dude-overlay.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3% 0 5%;
+	background-position: center;
+	border-radius: 4px;
+}
+
+#panel-1981-5-1-0 h3{
+	font-size: 2.8em;
+}
+
+.widget-title, .widget>.title h3{
+	padding-left: 55px;
+}
+
+.skills-headings-one{
+	font-size: 6em;
+}
+
+.skills-headings-two{
+	font-size: 3em;
+}
+
+#pgc-1981-10-0{
+	margin-bottom: 2% !important;
+}
+
+
+#panel-1981-10-0-0{
+	background-image: url('http://shucktheworld.com/wp-content/uploads/2014/11/into-the-abyss.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 7% 0% 21%;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#panel-1981-11-0-1{
+	margin-bottom: 7% !important;
+}
+
+#panel-1981-11-0-1 p{
+	font-size: 3.3em;
+	font-family: 'Rokkitt', serif;
+	margin-bottom: 0;
+	line-height: 55px;
+}
+
+#panel-1981-11-0-2 .textwidget{
+	width: 31%;
+	margin: 0 auto;
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+#panel-1981-11-0-2 .textwidget h2{
+	text-align: center;
+	margin-bottom: 5%;
+	background-color: #f37a6a;
+	color: #fff;
+	padding: 5%;
+	font-family: 'Open Sans';
+	font-size: 1.9em;
+}
+
+#panel-1981-13-1-1 .textwidget{
+	font-size: 1.2em;
+	text-align: justify;
+}
+
+#panel-1981-13-1-1 h2{
+	text-align: center;
+	margin-top: 5%;
+	background-color: #f37a6a;
+	color: #fff;
+	padding: 5%;
+	font-family: 'Open Sans';
+	font-size: 1.5em;
+}
+
+#pg-1981-15, #pg-1981-18, #panel-1981-19-1-1, #panel-1981-19-1-0, #panel-1981-19-1-2{
+	text-align: center !important;
+}
+
+#pg-1981-15{
+	margin-bottom: 7% !important;
+}
+
+#pg-1981-15 img{
+	width: 150px;
+}
+
+#pg-1981-15 h1{
+	font-size: 3.3em !important;
+}
+
+.oyster-points{
+	font-size: 2em;
+	margin-bottom: 0;
+	line-height: 33px;
+	color: #999;
+	font-style: italic;
+}
+
+.or{
+	font-size: 1.8em;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.training-titles{
+	font-size: 2.8em;
+}
+
+.training-text{
+	font-size: 1.3em;
+	text-align: justify;
+	border: 1px solid #eee;
+	padding: 5%;
+	border-radius: 4px;
+}
+
+.pricing-table .nazv{
+	font-size: 1.1em;
+	font-weight: 400;
+}
+
+#panel-1981-7-0-0{
+	width: 50%;
+	margin: 0 auto;
+}
+
+#pg-1981-7{
+	margin-bottom: 0 !important;
+}
+
+#panel-1981-9-0-0, #panel-1981-17-0-0{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.pricing-table .dop-text{
+	font-size: 1.2em;
+}
+
+.pricing-table .bullet-item{
+	font-size: 1.4em;
+}
+
+.o-less-margin-t-b{
+	border-radius: 4px 4px 0 0;
+}
