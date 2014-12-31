@@ -28,8 +28,11 @@ $(document).ready(function(){
 	}
 
 	function finalAmination(){
-		$('body').addClass('tiger-bg');
-		
+		animationBox.fadeOut(1000, function(){
+			$(this).remove();
+			tigerBg.show('slide');
+		});
+
 	}
 
 	var logoBox = $('.logo-box');
@@ -39,6 +42,7 @@ $(document).ready(function(){
 	var tiger3 = $('#tiger-3');
 	var arrowUp = $('#arrow-up');
 	var tigerParagraph = $('.t-paragraph');
+	var tigerBg = $('.tiger-bg');
 
 	$('.logo-top').fadeIn(3000, function(){
 		$('.logo-bottom').fadeIn('fast');
